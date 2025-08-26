@@ -8,3 +8,13 @@ public class Book extends TangibleAsset {
 	publid String getIsbn() {return this.isbn;}
 }
 
+public class Main {
+    public static void main(String[] args) {
+        Book book = new Book("Java入門", 2500, "blue", "978-1234567890");
+
+        System.out.println("書籍名: " + book.getName());
+        System.out.println("価格: " + book.getPrice() + "円");
+        System.out.println("色: " + book.getColor());
+        System.out.println("ISBN: " + book.getIsbn());
+    }
+}
